@@ -1,0 +1,594 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Inter:wght@300;400;500;700&family=Oswald:wght@700&display=swap');
+
+.chatfunction
+{
+  width: 56px;
+  height: 56px;
+  background-color: #72b901;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: fixed;
+  z-index: 1;
+  bottom: 3%;
+  right: 2%;
+
+  &:hover
+  {
+    background-color: #588f01;
+  }
+
+  i
+  {
+    font-size: 25px;
+  }
+}
+
+//Button
+.btn-yellow
+{
+  display: inline-block;
+  background-color: rgb(237, 209, 0);
+  box-shadow: inset 0 0 12px 2px #cf7f00d0, 0 0 8px 1px #ff6f017e ;
+  padding: 0.3rem 0.8rem;
+  border-radius: 0.2rem; 
+
+  &:hover
+  {
+    box-shadow: inset 0 0 14px 10px #cf7f00d0, 0 0 8px 1px #ff6f017e ;
+  }
+
+  a
+  {
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+  }
+}
+
+// Header
+.header 
+{
+    background-color: #353535;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 14rem;
+    padding-block: 0;
+    margin-block: 0;
+  
+    .Contact-Us 
+    {
+      display: inline-flex;
+      align-items: center;
+      
+      padding: 10px 0px;
+
+      &:hover
+      {
+        background-color: #6e6e6ef6;
+      }
+
+  
+      a
+      {
+        color: white; 
+        text-decoration: none;
+      }
+
+      span
+      {
+        color: white;
+        margin-left: 10px;
+      }
+    }
+  
+
+    .gift-signin
+    {
+      display: inline-flex;
+      align-items: center;
+      background-color: transparent;
+      color: white;
+
+      .btn-gift-list
+      {
+        background-color: transparent;
+        color: white;
+        padding-right: 10px;
+        padding-block: 10px;
+        border: none;
+
+        &:hover
+        {
+          background-color: #737373;
+        }
+      }
+
+      .sigin
+      {
+        padding: 6px 14px;
+        align-items: center;
+        background-color: transparent;
+        color: white;
+        border: none;
+  
+          &:hover
+          {
+            background-color: #737373;
+          }
+
+      }
+
+      #warhammer-light
+      {
+        width: 33px;
+        height: auto;
+        margin-right: 10px;
+      }
+    }
+}
+
+// Section 1 - "Serach"
+  .section.search
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 14rem;
+  padding-block: 0.5rem;
+
+  #GW-logo
+  {
+    width: 12rem;
+  }
+
+
+  #searchfunction
+  {
+    padding: 8px 12px; 
+    background-color: #e5e5e5;
+    box-shadow: inset 0px 0 10px 2px #737373;
+    box-shadow: inset 5px 0px 15px 2px #35353573;
+    border-radius: 0.3rem;
+    z-index: 0;
+
+    #Searchbox-top
+    {
+      background-color: transparent;
+      color: black;
+      border: none;
+      outline: none;
+      z-index: 1;
+    }
+
+    #btn-search
+    {
+      border: none;
+      background-color: transparent;
+    }
+  }
+
+  label
+  {
+    font-size: 14px;
+  }
+
+
+  #delivering
+  {
+    width: 130px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .btn-deliveringTo
+    {
+      border: none;
+      width: 26px;
+      height: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 14px;
+  
+      #sweden
+      {
+        width: 26px;
+        height: 20px;
+      }
+    }
+  }
+
+}
+
+// Section 2 - "Main menu
+.section.menu
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #353535;
+  height: 75px;
+  width: auto;
+  padding-block: 0rem;
+  
+  .container-menu
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75px;
+    padding: 0px 16px;
+    padding-block: auto;
+
+    &:hover
+    {
+      background-color: #737373;
+    }
+
+    a
+    {
+      color: white;
+      text-decoration: none;
+      line-height: 1.2rem;
+    }
+
+    .image-menu
+    {
+      width: 80%;
+    }
+  }
+
+}
+
+// Section 3 - "Main image"
+.section.image
+{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  #buildyour
+  {
+    width: 25rem;
+    height: 20rem;
+    background-color: #00000089;
+    position:absolute;
+    bottom: 0;
+    left: 12%;
+    padding-inline: 4rem;
+    padding-top: 6rem; 
+    color: white; 
+    
+    h3
+    {
+      font-weight: 700;
+    }
+
+    #HH-logo
+    {
+      position: absolute;
+      top: -12%;
+      left: 12%;
+      width: 80%; 
+    }
+  }
+
+  #main-image
+  {
+    width: auto;
+    height: auto;
+  }
+}
+
+// Section 4 - "What's new"
+section.new
+{
+  padding-block: 2rem;
+  padding-inline: 0.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  gap: 1.5rem;
+
+  .container-new
+  {
+    position: relative;
+
+    .image-grid
+    {
+      width: 38rem;
+      height: 22rem;
+      border-radius: 0.3rem;
+    }
+
+    .content-new
+    {
+      background-color: #00000089;
+      padding: 0.6rem;
+      color: white;
+      width: 50%; 
+      position: absolute;
+      bottom: 0;
+      left: 5%; 
+
+      h4
+      {
+        font-size: 1.1rem;
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+// Section 5 - "How to order"
+.section.HowTo
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8rem;
+  padding-block: 2rem;
+
+  .HowTo-image
+  {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 18rem;
+
+    .box-image
+    {
+      padding-bottom: 2.5rem;
+    } 
+
+    a
+    {
+      color: black;
+      text-decoration: none;
+
+    }
+    h4
+    {
+      font-size: 1.1rem;
+      font-weight: 700;
+    }
+  }
+}
+
+// Section 6 - "Featured products"
+.section.featured
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-block: 2rem;
+
+  .headline
+  {
+    text-align: center;
+    padding-bottom: 2rem;
+
+    h1
+    {
+      font-family: 'Oswald', sans-serif;
+      font-weight: 600;
+      font-size: 3rem;
+    }
+
+    h3
+    {
+      font-weight: 400;
+    }
+  }
+
+  .new-items
+  {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    gap: 6rem;
+
+    .item-container
+    {
+      display: flex;
+      justify-content: right;
+      align-items: start;
+      width: 30rem;
+      height: auto;
+      position: relative;
+
+      a
+      {
+        color: black;
+        text-decoration: none;
+      }
+
+      .image-featured
+      {
+        width: 24rem;
+        height: 24rem;
+      }
+
+      .text-container
+      {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        background-color: #ffffffa3;
+        padding: 1rem;
+        z-index: 1;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        .btn-yellow
+        {
+          width: 6rem;
+        }
+
+        h4
+        {
+          font-size: 1rem;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
+
+// Section 7 - "Import Duties and Taxes"
+.section.import
+{
+display: flex;
+justify-content: center;
+align-items: center;
+ padding-block: 1.5rem;
+} 
+
+// Section 8 - "Subscribe"
+.section.subscribe
+{
+   background-color: black;
+   padding-inline: 14rem;
+   padding-block: 1rem;
+   display: flex;
+   justify-content: space-between;
+
+   .subscribe
+   {
+    color: white;
+
+    h2
+  {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 1rem; 
+  }
+
+    #subscribe
+    {
+      display: flex;
+      
+      #email
+      {
+        margin-right: 1.5rem;
+        padding: 0.4rem;
+        border-radius: 0.2rem;
+        border: none;
+        width: 22rem;
+      }
+
+      label
+      {
+        background-color: #588f01;
+        display: inline-block;
+        box-shadow: inset 0 0 12px 0px rgba(0, 0, 0, 0.533);
+        padding-block: 0.4rem; 
+        padding-inline: 1.2rem;
+        border-radius: 0.2rem;
+        width: auto;
+        height: auto;
+
+        &:hover
+        {
+          box-shadow: inset 0 0 22px 0px rgba(0, 0, 0, 0.865);
+        }
+      }
+    }
+   }
+
+   .terms
+   {
+    color: white;
+    padding: 1rem;
+    font-size: 13px; 
+    a
+    {
+      color: white;
+    }
+   }
+   
+}
+
+// Footer
+.section.footer
+{
+  background-color: #353535;
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 14rem;
+  color: white;
+
+    .content
+    {
+      padding-block: 1rem;
+      display: flex;
+      flex-direction: column;
+
+      a
+      {
+        color: white;
+        text-decoration: none;
+        padding-bottom: 0.5rem;
+
+        &:hover
+        {
+          text-decoration: underline;
+        }
+      }
+
+      h2
+      {
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin-bottom: 1rem; 
+      }
+    }
+
+    .split
+    {
+      display: flex;
+
+      .border
+      {
+        width: 2px;
+        height: 142px;
+        background-color: white;
+        margin-inline: 1rem;  
+      }
+
+      a
+      {
+        color: white;
+        text-decoration: none;
+      }
+
+      .split-content
+      {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+  }
+
+// COPY RIGHT 
+.footer-footer
+{
+  padding-top: 1rem;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding-inline: 14rem;
+}
