@@ -21,10 +21,26 @@
   font-size: 25px;
 }
 
+.YourCartfunction {
+  width: 162px;
+  height: 40px;
+  background-color: rgba(53, 53, 53, 0.9137254902);
+  color: white;
+  border: solid 1px white;
+  border-bottom: none;
+  position: fixed;
+  bottom: 0;
+  right: 25%;
+  z-index: 4;
+}
+.YourCartfunction i {
+  margin-left: 10px;
+}
+
 .btn-yellow {
   display: inline-block;
   background-color: rgb(237, 209, 0);
-  box-shadow: inset 0 0 12px 2px rgba(207, 127, 0, 0.8156862745), 0 0 8px 1px rgba(255, 111, 1, 0.4941176471);
+  box-shadow: inset 0 0 12px 2px rgba(207, 127, 0, 0.8156862745), inset 0 0 8px 1px rgba(255, 111, 1, 0.4941176471);
   padding: 0.3rem 0.8rem;
   border-radius: 0.2rem;
 }
@@ -32,13 +48,13 @@
   box-shadow: inset 0 0 14px 10px rgba(207, 127, 0, 0.8156862745), 0 0 8px 1px rgba(255, 111, 1, 0.4941176471);
 }
 .btn-yellow a {
-  color: black;
+  color: rgb(22, 22, 22);
   text-decoration: none;
   font-size: 15px;
 }
 
 .header {
-  background-color: #353535;
+  background-color: rgb(22, 22, 22);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -52,7 +68,7 @@
   padding: 10px 0px;
 }
 .header .Contact-Us:hover {
-  background-color: rgba(110, 110, 110, 0.9647058824);
+  background-color: #474747;
 }
 .header .Contact-Us a {
   color: white;
@@ -76,7 +92,7 @@
   border: none;
 }
 .header .gift-signin .btn-gift-list:hover {
-  background-color: #737373;
+  background-color: #474747;
 }
 .header .gift-signin .sigin {
   padding: 6px 14px;
@@ -86,7 +102,7 @@
   border: none;
 }
 .header .gift-signin .sigin:hover {
-  background-color: #737373;
+  background-color: #474747;
 }
 .header .gift-signin #warhammer-light {
   width: 33px;
@@ -105,7 +121,7 @@
   width: 12rem;
 }
 .section.search #searchfunction {
-  padding: 8px 12px;
+  padding: 6px 8px;
   background-color: #e5e5e5;
   box-shadow: inset 0px 0 10px 2px #737373;
   box-shadow: inset 5px 0px 15px 2px rgba(53, 53, 53, 0.4509803922);
@@ -118,6 +134,7 @@
   border: none;
   outline: none;
   z-index: 1;
+  width: 16rem;
 }
 .section.search #searchfunction #btn-search {
   border: none;
@@ -151,7 +168,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: #353535;
+  background-color: rgb(22, 22, 22);
   height: 75px;
   width: auto;
   padding-block: 0rem;
@@ -165,7 +182,7 @@
   padding-block: auto;
 }
 .section.menu .container-menu:hover {
-  background-color: #737373;
+  background-color: #474747;
 }
 .section.menu .container-menu a {
   color: white;
@@ -328,10 +345,11 @@ section.new .container-new .content-new h4 {
   justify-content: center;
   align-items: center;
   padding-block: 1.5rem;
+  color: rgb(22, 22, 22);
 }
 
 .section.subscribe {
-  background-color: black;
+  background-color: rgb(22, 22, 22);
   padding-inline: 14rem;
   padding-block: 1rem;
   display: flex;
@@ -392,7 +410,7 @@ section.new .container-new .content-new h4 {
 .section.footer .content a {
   color: white;
   text-decoration: none;
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.7rem;
 }
 .section.footer .content a:hover {
   text-decoration: underline;
@@ -409,7 +427,7 @@ section.new .container-new .content-new h4 {
   width: 2px;
   height: 142px;
   background-color: white;
-  margin-inline: 1rem;
+  margin-inline: 1.2rem;
 }
 .section.footer .split a {
   color: white;
@@ -422,7 +440,7 @@ section.new .container-new .content-new h4 {
 
 .footer-footer {
   padding-top: 1rem;
-  background-color: black;
+  background-color: rgb(22, 22, 22);
   color: white;
   display: flex;
   align-items: center;
