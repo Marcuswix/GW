@@ -1,5 +1,49 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Inter:wght@300;400;500;700&family=Oswald:wght@700&display=swap');
 
+body
+{
+  position: relative;
+}
+
+// "To the top" function
+#to-the-top
+{
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color:  rgb(237, 209, 0);
+  box-shadow: inset 0 0 12px 2px #cf7f00d0, inset 0 0 8px 1px #ff6f017e;
+  padding: 0.3rem 0.8rem;
+  border-radius: 0.2rem;
+  z-index: 5;
+  position: fixed;
+  bottom: 2%;
+  left: 2%;
+  opacity: 0.8;
+  transition: box-shadow 100ms ease-in-out, transform 100ms ease-in-out, opacity 100ms ease-in-out; 
+
+
+  &:hover
+  {
+    box-shadow: inset 0 0 12px 6px #cf8000e5, 0 0 6px 1px #ff6f017e ;
+    transform: scale(1.1)
+  }
+
+  &:active
+  {
+    background-color: rgb(255, 238, 110);
+  }
+
+}
+
+.hide-btn
+{
+  opacity: 0 !important;
+}
+
 // Chat function
 .chatfunction
 {
@@ -16,16 +60,104 @@
   z-index: 1;
   bottom: 3%;
   right: 2%;
+  transition: ease-in-out 120ms; 
 
   &:hover
   {
     background-color: #588f01;
   }
 
+  &:active
+  {
+    transform: scale(0.9);
+    border: none;
+  }
+
   i
   {
     font-size: 25px;
+    border: none;
+    position: absolute;
   }
+}
+
+#chat-container
+{
+  position: fixed;
+  right: 2%;
+  bottom: 12%;
+  z-index: 2;
+  width: 20vw;
+  height: 60vh;
+  background-color: white;
+  opacity: 1;
+  transition: opacity ease-in-out 200ms;
+
+  #green
+  {
+    background-color: #72b901;
+    color: #e5e5e5;
+    text-align: center;
+    padding-block: 1rem;
+  }
+
+  .box-container
+  {
+    padding: 1rem;
+    margin-inline: 2rem;
+    box-shadow: 0 5px 8px 0px #97a482;
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 14%;
+
+    i{
+      font-size: 2rem;
+      font-weight: 100;
+      color: #72b901;
+      padding: 1rem;
+    }
+
+    .text-container
+    {
+      padding: 0;
+      margin-left: 1rem;
+      p{
+        font-weight: 100;
+        font-size: 12px;
+      }
+    }
+  }
+
+  #chat-now
+  {
+    position: absolute;
+    top: 14%;
+    transition: top ease-in-out 100ms;
+
+    &:hover
+    {
+      top: 13.5%;
+    }
+  }
+
+  #email{
+    position: absolute;
+    top: 39%;
+    transition: top ease-in-out 100ms;
+
+    &:hover
+    {
+      top: 38.5%;
+    }
+  }
+}
+
+.hide 
+{
+  opacity: 0 !important;
 }
 
 // Your cart function
@@ -41,6 +173,7 @@
   bottom: 0;
   right: 25%;
   z-index: 4;
+  transition: ease-in-out 120ms; 
 
   i
   {
@@ -54,13 +187,14 @@
 {
   display: inline-block;
   background-color: rgb(237, 209, 0);
-  box-shadow: inset 0 0 12px 2px #cf7f00d0, inset 0 0 8px 1px #ff6f017e ;
+  box-shadow: inset 0 0 12px 2px #cf7f00d0, inset 0 0 8px 1px #ff6f017e;
   padding: 0.3rem 0.8rem;
-  border-radius: 0.2rem; 
+  border-radius: 0.2rem;
+  transition: box-shadow ease-in-out 1020ms;  
 
   &:hover
   {
-    box-shadow: inset 0 0 14px 10px #cf7f00d0, 0 0 8px 1px #ff6f017e ;
+    box-shadow: inset 0 0 12px 6px #cf8000e5, 0 0 6px 1px #ff6f017e;
   }
 
   a
@@ -511,16 +645,18 @@ color: rgb(22, 22, 22);
         width: 22rem;
       }
 
-      label
+      #btn-subscribe
       {
-        background-color: #588f01;
-        display: inline-block;
+        background-color: #609b01;
+        display: inline-flex;
+        align-items: center;
         box-shadow: inset 0 0 12px 0px rgba(0, 0, 0, 0.533);
         padding-block: 0.4rem; 
-        padding-inline: 1.2rem;
+        padding-inline: 1.4rem;
         border-radius: 0.2rem;
         width: auto;
         height: auto;
+        color: white;
 
         &:hover
         {

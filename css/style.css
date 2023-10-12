@@ -1,4 +1,38 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Inter:wght@300;400;500;700&family=Oswald:wght@700&display=swap");
+body {
+  position: relative;
+}
+
+#to-the-top {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: rgb(237, 209, 0);
+  box-shadow: inset 0 0 12px 2px rgba(207, 127, 0, 0.8156862745), inset 0 0 8px 1px rgba(255, 111, 1, 0.4941176471);
+  padding: 0.3rem 0.8rem;
+  border-radius: 0.2rem;
+  z-index: 5;
+  position: fixed;
+  bottom: 2%;
+  left: 2%;
+  opacity: 0.8;
+  transition: box-shadow 100ms ease-in-out, transform 100ms ease-in-out, opacity 100ms ease-in-out;
+}
+#to-the-top:hover {
+  box-shadow: inset 0 0 12px 6px rgba(207, 128, 0, 0.8980392157), 0 0 6px 1px rgba(255, 111, 1, 0.4941176471);
+  transform: scale(1.1);
+}
+#to-the-top:active {
+  background-color: rgb(255, 238, 110);
+}
+
+.hide-btn {
+  opacity: 0 !important;
+}
+
 .chatfunction {
   width: 56px;
   height: 56px;
@@ -13,12 +47,82 @@
   z-index: 1;
   bottom: 3%;
   right: 2%;
+  transition: ease-in-out 120ms;
 }
 .chatfunction:hover {
   background-color: #588f01;
 }
+.chatfunction:active {
+  transform: scale(0.9);
+  border: none;
+}
 .chatfunction i {
   font-size: 25px;
+  border: none;
+  position: absolute;
+}
+
+#chat-container {
+  position: fixed;
+  right: 2%;
+  bottom: 12%;
+  z-index: 2;
+  width: 20vw;
+  height: 60vh;
+  background-color: white;
+  opacity: 1;
+  transition: opacity ease-in-out 200ms;
+}
+#chat-container #green {
+  background-color: #72b901;
+  color: #e5e5e5;
+  text-align: center;
+  padding-block: 1rem;
+}
+#chat-container .box-container {
+  padding: 1rem;
+  margin-inline: 2rem;
+  box-shadow: 0 5px 8px 0px #97a482;
+  display: flex;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 14%;
+}
+#chat-container .box-container i {
+  font-size: 2rem;
+  font-weight: 100;
+  color: #72b901;
+  padding: 1rem;
+}
+#chat-container .box-container .text-container {
+  padding: 0;
+  margin-left: 1rem;
+}
+#chat-container .box-container .text-container p {
+  font-weight: 100;
+  font-size: 12px;
+}
+#chat-container #chat-now {
+  position: absolute;
+  top: 14%;
+  transition: top ease-in-out 100ms;
+}
+#chat-container #chat-now:hover {
+  top: 13.5%;
+}
+#chat-container #email {
+  position: absolute;
+  top: 39%;
+  transition: top ease-in-out 100ms;
+}
+#chat-container #email:hover {
+  top: 38.5%;
+}
+
+.hide {
+  opacity: 0 !important;
 }
 
 .YourCartfunction {
@@ -32,6 +136,7 @@
   bottom: 0;
   right: 25%;
   z-index: 4;
+  transition: ease-in-out 120ms;
 }
 .YourCartfunction i {
   margin-left: 10px;
@@ -43,9 +148,10 @@
   box-shadow: inset 0 0 12px 2px rgba(207, 127, 0, 0.8156862745), inset 0 0 8px 1px rgba(255, 111, 1, 0.4941176471);
   padding: 0.3rem 0.8rem;
   border-radius: 0.2rem;
+  transition: box-shadow ease-in-out 1020ms;
 }
 .btn-yellow:hover {
-  box-shadow: inset 0 0 14px 10px rgba(207, 127, 0, 0.8156862745), 0 0 8px 1px rgba(255, 111, 1, 0.4941176471);
+  box-shadow: inset 0 0 12px 6px rgba(207, 128, 0, 0.8980392157), 0 0 6px 1px rgba(255, 111, 1, 0.4941176471);
 }
 .btn-yellow a {
   color: rgb(22, 22, 22);
@@ -373,17 +479,19 @@ section.new .container-new .content-new h4 {
   border: none;
   width: 22rem;
 }
-.section.subscribe .subscribe #subscribe label {
-  background-color: #588f01;
-  display: inline-block;
+.section.subscribe .subscribe #subscribe #btn-subscribe {
+  background-color: #609b01;
+  display: inline-flex;
+  align-items: center;
   box-shadow: inset 0 0 12px 0px rgba(0, 0, 0, 0.533);
   padding-block: 0.4rem;
-  padding-inline: 1.2rem;
+  padding-inline: 1.4rem;
   border-radius: 0.2rem;
   width: auto;
   height: auto;
+  color: white;
 }
-.section.subscribe .subscribe #subscribe label:hover {
+.section.subscribe .subscribe #subscribe #btn-subscribe:hover {
   box-shadow: inset 0 0 22px 0px rgba(0, 0, 0, 0.865);
 }
 .section.subscribe .terms {

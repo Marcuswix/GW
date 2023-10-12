@@ -16,11 +16,36 @@
 <body>
 
 <!-- Chat function -->
-<button class="chatfunction"><i class="fa-regular fa-comment"></i>
+<button id="btn-chat" class="chatfunction" onclick="openCloseChat()"><i id="chat" class="fa-regular fa-comment"></i><i id="xmark" class="fa-solid fa-xmark hide"></i>
 </button>
+<div id="chat-container" class="hide">
+    <div id="green">
+        <b>Start a new conversation</b>
+        <p>What channel do you prefer?</p>
+    </div>
+    <div>
+        <div id="email" class="box-container"><i class="fa-regular fa-paper-plane"></i>
+            <div class="text-container">
+            <b>Email</b>
+            <p>No time to wait around? We usually respond within a few days.</p>
+            </div>
+        </div>
+        <div id="chat-now" class="box-container"><i class="fa-regular fa-comments"></i>
+            <div class="text-container">
+            <b>Chat</b>
+            <p>Chat to us now. Get answers to all of your Warhammer questions in real time.</p>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!-- Your cart function -->
 <button class="YourCartfunction">Your Cart(0)  kr<i class="fa-solid fa-circle-chevron-up"></i></i>
+</button>
+
+<!-- "To the top" - function  -->
+<button id="to-the-top" class="hide-btn" onclick="toTheTop()">
+    <i class="fa-solid fa-arrow-up"></i>
 </button>
 
 <!-- Header -->
@@ -300,8 +325,8 @@
 <section class="section subscribe">
     <div class="subscribe"><h2>More Warhammer, More Often</h2>
     <form id="subscribe">
-    <input id="email" name="email" type="email" title="Email" method="post" action="#" placeholder="Email Adress">
-    <label for="email">Subscribe</label>
+    <input tabindex="1" id="email" name="email" type="email" title="Email" method="post" action="#" placeholder="Email Adress">
+    <button id="btn-subscribe" tabindex="2" type="submit">Subscribe</button>
     </input>
     </form>
     </div>
@@ -376,6 +401,8 @@
     <p>© Copyright Games Workshop Limited 2023.</p>
     </div>
 </footer>
+
+<script src="js/script.js"></script>
 
 </body>
 </html>
