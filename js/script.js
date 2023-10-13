@@ -27,7 +27,7 @@ window.addEventListener("scroll", function()
 
 // Open chat function
 const chat = document.getElementById("chat-container")
-const open = document.getElementById("chat")
+const openChat = document.getElementById("chat")
 const xmark = document.getElementById("xmark")
 
 function openCloseChat()
@@ -35,13 +35,34 @@ function openCloseChat()
     if (chat.classList.contains("hide"))
     {
     chat.classList.remove("hide")
-    open.classList.add("hide")
+    openChat.classList.add("hide")
     xmark.classList.remove("hide")
     }
     else
     {
         chat.classList.add("hide")
-        open.classList.remove("hide")
+        openChat.classList.remove("hide")
         xmark.classList.add("hide")
     }
 }
+
+//Open cart function
+const openCart = document.getElementById("cart")
+const cartButton = document.getElementById("btn-your-cart")
+
+function showCart()
+{
+    if (cartButton.classList.contains("hide-btn-your-cart"))
+    {
+        openCart.classList.remove("hide-your-cart")
+        cartButton.classList.remove("hide-btn-your-cart")
+    }
+
+    else
+    {
+        openCart.classList.add("hide-your-cart")
+        cartButton.classList.add("hide-btn-your-cart")
+    }
+}
+
+
